@@ -18,7 +18,7 @@ Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-raw_socket_upgrade = "0.1.0"
+axum-raw-websocket = { git = "https://github.com/tompro/axum-raw-websocket.git" }
 ```
 
 ## Usage
