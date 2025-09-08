@@ -2,6 +2,7 @@
 name = "axum-raw-websocket"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
 
 [dependencies]
 tokio = "1.44.1"
