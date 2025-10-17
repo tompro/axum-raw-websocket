@@ -1,16 +1,16 @@
 [package]
 name = "axum-raw-websocket"
-version = "0.1.0"
+version = "0.8.0"
 edition = "2024"
 license = "MIT"
 
 [dependencies]
-tokio = "1.44.1"
-axum = { version = "0.8.3", features = ["ws", "tokio"] }
-hyper = "1.6.0"
-hyper-util = { version = "0.1.11", features = ["tokio"] }
-sha1 = "0.10.6"
-base64 = "0.22.1"
+tokio = "1"
+axum = { version = "0.8", features = ["ws", "tokio"] }
+hyper = "1.7"
+hyper-util = { version = "0.1", features = ["tokio"] }
+sha1 = "0.10"
+base64 = "0.22"
 
 [features]
 http2 = ["axum/http2"]

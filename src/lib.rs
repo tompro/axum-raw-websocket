@@ -88,7 +88,7 @@ impl<F> RawSocketUpgrade<F> {
             callback(upgraded).await;
         });
 
-        let response = if let Some(sec_websocket_key) = &self.sec_websocket_key {
+        if let Some(sec_websocket_key) = &self.sec_websocket_key {
             // If `sec_websocket_key` was `Some`, we are using HTTP/1.1.
 
             #[allow(clippy::declare_interior_mutable_const)]
@@ -108,9 +108,7 @@ impl<F> RawSocketUpgrade<F> {
                 .unwrap()
         } else {
             Response::new(Body::empty())
-        };
-
-        response
+        }
     }
 }
 
