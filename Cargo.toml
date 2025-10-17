@@ -5,6 +5,8 @@ edition = "2024"
 license = "MIT"
 authors = ["protom <office@protom.eu>"]
 description = "Handles WebSocket upgrades with raw socket access, based on Axum's WebSocket upgrade mechanism for Tungstenite."
+homepage = "https://github.com/tompro/axum-raw-websocket"
+repository = "https://github.com/tompro/axum-raw-websocket"
 keywords = ["axum", "websocket"]
 
 [dependencies]

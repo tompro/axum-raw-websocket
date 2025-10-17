@@ -2,8 +2,7 @@
 
 A Rust library for handling WebSocket upgrades with raw socket access, based on Axum's WebSocket upgrade mechanism.
 
-
-This websocket upgrade is based on the axum integrated one ([axum::extract::ws::WebSocketUpgrade])[https://docs.rs/axum/0.8.3/axum/extract/struct.WebSocketUpgrade.html]. The main difference is that it will onvoke the on_upgrade callback with the raw socket which allow the socket to be used by other libraries than the default tokio-tungstenite.
+This websocket upgrade is based on the axum integrated one [axum::extract::ws::WebSocketUpgrade](https://docs.rs/axum/0.8.3/axum/extract/struct.WebSocketUpgrade.html). The main difference is that it will onvoke the on_upgrade callback with the raw socket which allow the socket to be used by other libraries than the default tokio-tungstenite.
 
 ## Features
 
@@ -18,7 +17,7 @@ Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-axum-raw-websocket = { git = "https://github.com/tompro/axum-raw-websocket.git" }
+axum-raw-websocket = "*"
 ```
 
 ## Usage
