@@ -3,6 +3,9 @@ name = "axum-raw-websocket"
 version = "0.8.0"
 edition = "2024"
 license = "MIT"
+authors = ["protom <office@protom.eu>"]
+description = "Handles WebSocket upgrades with raw socket access, based on Axum's WebSocket upgrade mechanism for Tungstenite."
+keywords = ["axum", "websocket"]
 
 [dependencies]
 tokio = "1"
